@@ -9,5 +9,5 @@ After making calculation it is possible to save it into database and make change
 ![Capture2](https://github.com/harsul/ProductionTreeCost/blob/master/KromelProgram/Resources/Capture2.PNG)
 
 ```diff
-- This is demo version of program, the program in production has a slightly different look!
+- This is demo version of program, the lunched program has a slightly different look including database connections!
 ```
