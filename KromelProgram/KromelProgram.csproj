@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F4A322-3B52-4D56-A085-79132FAB0FF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KromelProgram</RootNamespace>
+    <AssemblyName>KromelProgram</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>output-onlinepngtools.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DatabaseDataSet.cs">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\GrafikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\GrafikForm.Designer.cs">
+      <DependentUpon>GrafikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetForm.Designer.cs">
+      <DependentUpon>MaliyetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetHesapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetHesapForm.Designer.cs">
+      <DependentUpon>MaliyetHesapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetlendirmeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetlendirmeForm.Designer.cs">
+      <DependentUpon>MaliyetlendirmeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maliyet\MaliyetListForm.Designer.cs">
+      <DependentUpon>MaliyetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Malzeme\MalzemeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Malzeme\MalzemeListForm.Designer.cs">
+      <DependentUpon>MalzemeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Malzeme\MalzemeSecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Malzeme\MalzemeSecForm.designer.cs">
+      <DependentUpon>MalzemeSecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mamul\MamulListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mamul\MamulListForm.Designer.cs">
+      <DependentUpon>MamulListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mamul\MamulSecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mamul\MamulSecForm.Designer.cs">
+      <DependentUpon>MamulSecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mamul\ResimGosterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mamul\ResimGosterForm.Designer.cs">
+      <DependentUpon>ResimGosterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mamul\UrunAgaciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mamul\UrunAgaciForm.Designer.cs">
+      <DependentUpon>UrunAgaciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Taslak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taslak.Designer.cs">
+      <DependentUpon>Taslak.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Maliyet\AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maliyet\GrafikForm.resx">
+      <DependentUpon>GrafikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maliyet\MaliyetForm.resx">
+      <DependentUpon>MaliyetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maliyet\MaliyetHesapForm.resx">
+      <DependentUpon>MaliyetHesapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maliyet\MaliyetlendirmeForm.resx">
+      <DependentUpon>MaliyetlendirmeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maliyet\MaliyetListForm.resx">
+      <DependentUpon>MaliyetListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Malzeme\MalzemeListForm.resx">
+      <DependentUpon>MalzemeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Malzeme\MalzemeSecForm.resx">
+      <DependentUpon>MalzemeSecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mamul\MamulListForm.resx">
+      <DependentUpon>MamulListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mamul\MamulSecForm.resx">
+      <DependentUpon>MamulSecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mamul\ResimGosterForm.resx">
+      <DependentUpon>ResimGosterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mamul\UrunAgaciForm.resx">
+      <DependentUpon>UrunAgaciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taslak.resx">
+      <DependentUpon>Taslak.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DatabaseDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="output-onlinepngtools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
